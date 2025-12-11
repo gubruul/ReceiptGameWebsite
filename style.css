@@ -1,0 +1,90 @@
+/* General */
+body {
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.tab-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+  gap: 6px;
+  border-bottom: 2px solid #851919;
+  padding-bottom: 4px;
+}
+
+.tabs::-webkit-scrollbar {
+  display: none; /* Chrome / Safari */
+}
+
+.tab {
+  padding: 12px 18px;
+  flex-shrink: 0;
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+  background: #851919;
+  border-radius: 10px 10px 0 0;
+  border: none;
+  font-size: 1rem;
+  user-select: none;
+  font-family: "Creepster", cursive;
+}
+
+.tab.active {
+  background: #3C403F;
+}
+
+/* Content area */
+.tab-content {
+  display: none;
+  background: white;
+  padding: 20px;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  margin-top: 0;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Headline styling */
+h1 {
+  color: #851919;
+  font-family: "Creepster", cursive;
+  margin-top: 0;
+}
+
+h2 {
+  color: #3C403F;
+  margin-top: 10px;
+}
+
+/* Mobile-first improvements */
+@media (max-width: 600px) {
+  .tab {
+    font-size: 1.1rem;
+    padding: 14px 20px;
+    border-radius: 12px;
+  }
+
+  .tab-container {
+    padding: 12px;
+  }
+
+  .tab-content {
+    padding: 16px;
+  }
+}
