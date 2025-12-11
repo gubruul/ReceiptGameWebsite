@@ -12,6 +12,7 @@ body {
   max-width: 900px;
   margin: 0 auto;
   padding: 16px;
+  box-sizing: border-box;
 }
 
 /* Tabs */
@@ -72,6 +73,39 @@ h2 {
   margin-top: 10px;
 }
 
+/* Make images and videos responsive */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Make lists responsive */
+ul, ol {
+  padding-left: 1.2rem;
+  margin: 0 0 1rem 0;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Make buttons responsive */
+button, .btn {
+  cursor: pointer;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #851919;
+  color: #fff;
+  transition: background 0.2s;
+}
+
+button:hover, .btn:hover {
+  background: #3C403F;
+}
+
 /* Mobile-first improvements */
 @media (max-width: 600px) {
   .tab {
@@ -86,5 +120,59 @@ h2 {
 
   .tab-content {
     padding: 16px;
+  }
+}
+
+/* Extra optimization for smartphones (max-width 480px) */
+@media (max-width: 480px) {
+  /* Tabs stacked vertically */
+  .tabs {
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 0;
+  }
+
+  .tab {
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 1rem;
+  }
+
+  .tab-container {
+    padding: 8px;
+  }
+
+  .tab-content {
+    padding: 12px;
+  }
+
+  h1, h2, p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* Buttons full width */
+  button, .btn {
+    width: 100%;
+    padding: 12px 0;
+  }
+
+  /* Lists take full width */
+  ul, ol {
+    padding-left: 1rem;
+  }
+
+  /* Tables responsive */
+  table {
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 8px;
+    text-align: left;
   }
 }
