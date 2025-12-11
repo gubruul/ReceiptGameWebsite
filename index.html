@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
   <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
-<meta charset="UTF-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tabs Beispiel</title>
   <style>
@@ -13,7 +13,7 @@
       background: #f5f5f5;
       color: #333;
     }
-    
+
     /* Tab container */
     .tab-container {
       width: 100%;
@@ -58,8 +58,6 @@
     .tab-content.active {
       display: block;
     }
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Receipt Game</title>
 
     /* Headline colors */
     h1, .tab-title {
@@ -70,8 +68,6 @@
     h2 {
       color: #3C403F;
     }
-  <!-- Horror Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
 
     /* Mobile adjustments */
     @media (max-width: 600px) {
@@ -84,12 +80,9 @@
       }
     }
   </style>
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-<div class="tab-container">
+  <div class="tab-container">
 
     <div class="tabs">
       <div class="tab active" data-tab="spiel">Zum Spiel</div>
@@ -99,64 +92,44 @@
       <div class="tab" data-tab="team">Team</div>
       <div class="tab" data-tab="feedback">Feedback Forum</div>
     </div>
-    <nav class="tabs" role="tablist">
-      <button class="tab active" data-tab="spiel" role="tab" aria-selected="true">Zum Spiel</button>
-      <button class="tab" data-tab="rezepte" role="tab">Rezepte</button>
-      <button class="tab" data-tab="playlist" role="tab">Playlist</button>
-      <button class="tab" data-tab="kontakt" role="tab">Kontakt</button>
-      <button class="tab" data-tab="team" role="tab">Team</button>
-      <button class="tab" data-tab="feedback" role="tab">Feedback Forum</button>
-    </nav>
 
     <div id="spiel" class="tab-content active">
-    <section id="spiel" class="tab-content active" role="tabpanel">
-<h1>Zum Spiel</h1>
-<h2>Einführung</h2>
-<p>Hier steht Beispieltext über das Spiel und seine wichtigsten Eigenschaften.</p>
+      <h1>Zum Spiel</h1>
+      <h2>Einführung</h2>
+      <p>Hier steht Beispieltext über das Spiel und seine wichtigsten Eigenschaften.</p>
     </div>
-    </section>
 
     <div id="rezepte" class="tab-content">
-    <section id="rezepte" class="tab-content" role="tabpanel">
-<h1>Rezepte</h1>
-<h2>Beispielrezept</h2>
-<p>Eine Liste an spannenden Rezepten, die du ausprobieren kannst.</p>
+      <h1>Rezepte</h1>
+      <h2>Beispielrezept</h2>
+      <p>Eine Liste an spannenden Rezepten, die du ausprobieren kannst.</p>
     </div>
-    </section>
 
     <div id="playlist" class="tab-content">
-    <section id="playlist" class="tab-content" role="tabpanel">
-<h1>Playlist</h1>
-<h2>Unsere Musikempfehlungen</h2>
-<p>Hier findest du Songs, die perfekt zur Stimmung passen.</p>
+      <h1>Playlist</h1>
+      <h2>Unsere Musikempfehlungen</h2>
+      <p>Hier findest du Songs, die perfekt zur Stimmung passen.</p>
     </div>
-    </section>
 
     <div id="kontakt" class="tab-content">
-    <section id="kontakt" class="tab-content" role="tabpanel">
-<h1>Kontakt</h1>
-<h2>So erreichst du uns</h2>
-<p>Formular oder Kontaktmöglichkeiten können hier platziert werden.</p>
+      <h1>Kontakt</h1>
+      <h2>So erreichst du uns</h2>
+      <p>Formular oder Kontaktmöglichkeiten können hier platziert werden.</p>
     </div>
-    </section>
 
     <div id="team" class="tab-content">
-    <section id="team" class="tab-content" role="tabpanel">
-<h1>Team</h1>
-<h2>Wer wir sind</h2>
-<p>Informationen über die Teammitglieder.</p>
+      <h1>Team</h1>
+      <h2>Wer wir sind</h2>
+      <p>Informationen über die Teammitglieder.</p>
     </div>
-    </section>
 
     <div id="feedback" class="tab-content">
-    <section id="feedback" class="tab-content" role="tabpanel">
-<h1>Feedback Forum</h1>
-<h2>Teile deine Meinung</h2>
-<p>Hier können Nutzer Feedback abgeben oder Ideen einreichen.</p>
+      <h1>Feedback Forum</h1>
+      <h2>Teile deine Meinung</h2>
+      <p>Hier können Nutzer Feedback abgeben oder Ideen einreichen.</p>
     </div>
-    </section>
 
-</div>
+  </div>
 
   <script>
     const tabs = document.querySelectorAll('.tab');
@@ -172,7 +145,5 @@
       });
     });
   </script>
-  <!-- JavaScript -->
-  <script src="tabs.js"></script>
 </body>
 </html>
