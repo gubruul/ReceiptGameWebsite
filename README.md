@@ -6,4 +6,4 @@ Stand 11.12: Aktuell Demo Version, Inhalt folgt
 
 Life auf: https://gubruul.github.io/RecipeGameWebsite/
 
-![Screenshot](QR-Code/qr-recipegame_live.png)
+![Screenshot](QR-Code/qr_recipegame_live.png)
